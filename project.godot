@@ -15,8 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="crypth of the godotnancers"
-run/main_scene="res://scene/main.tscn"
+config/name="Drypth of the GodotDancers"
+run/main_scene="res://scene/level_1.tscn"
 config/icon="res://assets/texture/icon.png"
 
 [autoload]

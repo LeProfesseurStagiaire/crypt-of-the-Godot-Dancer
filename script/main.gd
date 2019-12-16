@@ -13,8 +13,7 @@ var time = 0
 var global_time = 0
 var bpm_count = 0
 var wrong_count = 0
-#onready var enemi_count = $enemi.get_child_count()
-onready var enemi_count = 1
+onready var enemi_count = $enemi.get_child_count()
 
 signal pulse
 
@@ -32,7 +31,10 @@ func _process(delta):
 	if enemi_count <=0:
 		if global.game_difficulty_selected < 2:
 			global.game_difficulty_selected += 1
-		get_tree().reload_current_scene()
+		else:
+			get_tree().change_scene_to(load("res://scene/win.tscn"))
+			return
+		get_tree().change_scene_to(load("res://scene/level_"+str(global.game_difficulty_selected +1)+".tscn"))
 	time += 1*delta
 	global_time +=1*delta
 	if time >= bpm:
