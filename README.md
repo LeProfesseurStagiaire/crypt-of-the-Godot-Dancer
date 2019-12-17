@@ -1,6 +1,6 @@
 # crypt-of-the-Godot-Dancer
 
-a "Crypth of the Necrodancer" mechanics copy made with Godot Engine.
+a copy of "Crypth of the Necrodancer" mechanics made with Godot Engine.
 
 use this project and all it content as you want ! 
 
